@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  *{
+    font-family: Barlow;
+  }
+  .circle{
+    @apply rounded-full flex items-center justify-center 
+  }
+  .Home-desktop{
+    background-image: url("./assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    .Home-tablet{
+      background-image: url("./assets/home/background-home-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .Home-mobile{
+      background-image: url("./assets/home/background-home-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .des-desktop{
+      background-image: url("./assets/destination/background-destination-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .des-tablet{
+      background-image: url("./assets/destination/background-destination-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .des-mobile{
+      background-image: url("./assets/destination/background-destination-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .crew-mobile{
+      background-image: url("./assets/crew/background-crew-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .crew-tablet{
+      background-image: url("./assets/crew/background-crew-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .crew-desktop{
+      background-image: url("./assets/crew/background-crew-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .tech-mobile{
+      background-image: url("./assets/technology/background-technology-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .tech-tablet{
+      background-image: url("./assets/technology/background-technology-tablet.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .tech-desktop{
+      background-image: url("./assets/technology/background-technology-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  .line{
+    height: 1px;
+    background-color: rgb(103, 103, 103);
+    width: 100%;
+    margin-left: 3rem;
+    opacity: 0.4;
+  }
+  @keyframes size {
+    0% { transform: scale(1)}
+    50% { transform: scale(.9)}
+    100% { transform: scale(1)}
+  }
+  .animation-scale{
+    animation: size;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+}
