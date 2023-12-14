@@ -19,7 +19,7 @@ const Header = () => {
       <li className={`${location=='/crew' ? 'underline':''}`}><Link to='/crew'>02 CREW</Link></li>
       <li className={`${location=='/technology' ? 'underline':''}`}><Link to='/technology'>03 TECHNOLOGY</Link></li>
       </ul>
-      <div className='sm:hidden'>
+      <div className='z-10 sm:hidden'>
       <img src={toggle ? close:menu} alt="" className='object-fill' onClick={()=>settoggle((prev)=>!prev)}/>
       <ul className={`${toggle ? 'flex':'hidden'} flex-col gap-20 backdrop-blur-3xl mt-10 p-10 h-fit absolute right-0 pt-10 min-w-max text-4xl font-medium text-white`}>
       <li className={`${location=='/' ? 'underline':''}`}><Link to='/'>00 HOME</Link></li>
